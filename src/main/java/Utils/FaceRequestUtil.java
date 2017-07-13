@@ -18,16 +18,187 @@ import java.util.Map;
 import java.util.Random;
 import javax.net.ssl.SSLException;
 public class FaceRequestUtil {
-
+/*
+* 增加人脸
+* 1.faceDetect(String path)
+* 2.
+*   a)get face_token from 1.
+*   b)add face_token database
+* 3.faceAddFace(String face_token)/faceAddFace(String[] face_tokens)添加人脸,观察返回值
+* 删除人脸
+* 1.get face_token from database
+* 2.faceRemoveFace(String face_token)/faceRemoveFace(String[] face_tokens)删除人脸,观察返回值
+* 搜索人脸
+* 1.faceDetect(String path)
+* 2.
+*   a)get face_token from 1
+*   b)add face_token database search record
+* 3.faceSearch(String path)搜索人脸，观察返回值。confidence
+* */
     public static void main(String[] args) throws Exception{
-        System.out.println(faceCompare("D:\\Shared\\Tmp\\1.jpg","D:\\Shared\\Tmp\\2.jpg"));
+        //System.out.println(faceCompare("D:\\Shared\\Tmp\\1.jpg","D:\\Shared\\Tmp\\2.jpg"));
+        //faceSetCreate();
+        //faceDetect("D:\\Shared\\Tmp\\2.jpg");
+        //faceAddFace("deb43041cbe020e66f04011facf86abd");//1
+        //faceAddFace("49b44174619f7b5b20c701f3a4a66904");//2
+        //faceAddFace("d1a85097375bf543d0d383a31dc993b6");//2
+        //faceSearch("D:\\Shared\\Tmp\\2.jpg");
     }
+    /*
+    * 分析人脸
+    * param:path 图片路径
+    * return:图片信息数组，包含face_token
+    * */
+    public static String faceDetect(String path)throws Exception{
+        File file = new File(path);
+        byte[] buff = getBytesFromFile(file);
+        String url = Constant.faceppDetectURL;
+        HashMap<String, String> map = new HashMap<String, String>();
+        HashMap<String, byte[]> byteMap = new HashMap<String, byte[]>();
+        map.put("api_key", Constant.faceppAPIKey);
+        map.put("api_secret", Constant.faceppAPISecret);
+        byteMap.put("image_file", buff);
+        try {
+            byte[] bacd = post(url, map, byteMap);
+            String str = new String(bacd);
+            System.out.println(str);
+            return str;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    /*
+    * FaceSet中添加人脸
+    * param:face_token/face_tokens/path
+    * return:result from URL
+    * */
+    public static String faceAddFace(String face_token) throws Exception{return faceSetAddFace(new String[] {face_token});}
+    public static String faceAddFace(String[] face_tokens) throws Exception{return faceSetAddFace(face_tokens);}
+    //public static String faceAddFacePath(String path) throws Exception{}
+
+    private static String faceSetAddFace(String[] face_tokens) throws Exception{
+        String url = Constant.faceppFaceSetAddURL;
+        HashMap<String, String> map = new HashMap<String, String>();
+        map.put("api_key", Constant.faceppAPIKey);
+        map.put("api_secret", Constant.faceppAPISecret);
+        map.put("outer_id", Constant.faceppFaceSetOuterId);
+        StringBuilder sb=new StringBuilder();
+        {
+            boolean mark = false;
+            for (String temp : face_tokens)
+                if (mark) {
+                    sb.append("," + temp);
+                } else {
+                    sb.append(temp);
+                    mark = true;
+                }
+        }
+        map.put("face_tokens",sb.toString());
+        try {
+            byte[] bacd = post(url, map, null);
+            String str = new String(bacd);
+            System.out.println(str);
+            return str;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /*
+    * FaceSet中remove人脸
+    * param:face_token/face_tokens
+    * return:result from URL.Please Foucus on "error_message".if success then it is not exist.
+    * */
+    public static String faceRemoveFace(String face_token) throws Exception{return faceSetRemoveFace(new String[] {face_token});}
+    public static String faceRemoveFace(String[] face_tokens) throws Exception{return faceSetRemoveFace(face_tokens);}
+    private static String faceSetRemoveFace(String[] face_tokens) throws Exception {
+        String url = Constant.faceppFaceSetRemoveURL;
+        HashMap<String, String> map = new HashMap<String, String>();
+        map.put("api_key", Constant.faceppAPIKey);
+        map.put("api_secret", Constant.faceppAPISecret);
+        map.put("outer_id", Constant.faceppFaceSetOuterId);
+        StringBuilder sb = new StringBuilder();
+        {
+            boolean mark = false;
+            for (String temp : face_tokens)
+                if (mark) {
+                    sb.append("," + temp);
+                } else {
+                    sb.append(temp);
+                    mark = true;
+                }
+        }
+        map.put("face_tokens", sb.toString());
+        try {
+            byte[] bacd = post(url, map, null);
+            String str = new String(bacd);
+            System.out.println(str);
+            return str;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    /*
+    * 创建默认faceSet
+    * PS:已创建，禁止使用
+    * */
+    private static String faceSetCreate() throws Exception{
+        String url = Constant.faceppFaceSetCreateURL;
+        HashMap<String, String> map = new HashMap<String, String>();
+        map.put("api_key", Constant.faceppAPIKey);
+        map.put("api_secret", Constant.faceppAPISecret);
+        map.put("display_name", Constant.faceppFaceSetDisplayName);
+        map.put("outer_id", Constant.faceppFaceSetOuterId);
+        try {
+            byte[] bacd = post(url, map, null);
+            String str = new String(bacd);
+            System.out.println(str);
+            return str;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    /*
+    * 搜索face
+    * param:faceToken 保存数据库中的face唯一标识
+    * return:
+    * */
+    public static String faceSearch(String path)throws Exception{
+        String url = Constant.faceppSearchURL;
+        File file = new File(path);
+        byte[] buff = getBytesFromFile(file);
+        HashMap<String, String> map = new HashMap<String, String>();
+        HashMap<String, byte[]> byteMap = new HashMap<String, byte[]>();
+        map.put("api_key", Constant.faceppAPIKey);
+        map.put("api_secret", Constant.faceppAPISecret);
+        map.put("outer_id", Constant.faceppFaceSetOuterId);
+        byteMap.put("image_file",buff);
+        try {
+            byte[] bacd = post(url, map, byteMap);
+            String str = new String(bacd);
+            System.out.println(str);
+            return str;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+    /*
+    * 人脸比对
+    * param:path1 人脸图片1路径
+    *       path2 人脸图片2路径
+    * return:比对结果包括置信值
+    * */
     public static String faceCompare(String path1,String path2) throws Exception {
         File file = new File(path1);
         File file2 = new File(path2);
         byte[] buff = getBytesFromFile(file);
         byte[] buff2 = getBytesFromFile(file2);
-        String url = Constant.faceppURL;
+        String url = Constant.faceppCompareURL;
         HashMap<String, String> map = new HashMap<String, String>();
         HashMap<String, byte[]> byteMap = new HashMap<String, byte[]>();
         map.put("api_key", Constant.faceppAPIKey);
@@ -48,6 +219,9 @@ public class FaceRequestUtil {
     private final static int CONNECT_TIME_OUT = 30000;
     private final static int READ_OUT_TIME = 50000;
     private static String boundaryString = getBoundary();
+/*
+* URL POST
+* */
     protected static byte[] post(String url, HashMap<String, String> map, HashMap<String, byte[]> fileMap) throws Exception {
         HttpURLConnection conne;
         URL url1 = new URL(url);
@@ -123,7 +297,7 @@ public class FaceRequestUtil {
         return URLEncoder.encode(value, "UTF-8");
     }
 
-    public static byte[] getBytesFromFile(File f) {
+    private static byte[] getBytesFromFile(File f) {
         if (f == null) {
             return null;
         }
