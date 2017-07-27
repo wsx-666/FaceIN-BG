@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d0d7148-f703-4faa-93ed-d96adf724fae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Utils/USERMANUAL.MD" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Utils/HttpRequestUtil.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/WEB-INF/classes/Action/LoginAction.class" afterPath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/WEB-INF/classes/Action/LoginAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/WEB-INF/classes/Dao/UserDao.class" afterPath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/WEB-INF/classes/Dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/WEB-INF/classes/Dao/UserDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/WEB-INF/classes/Dao/UserDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Dao/UserDaoImpl.class" afterPath="$PROJECT_DIR$/target/classes/Dao/UserDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Bean/ResponseBean/Results.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Utils/ResultUtil.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_34.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Utils/FaceRequestUtil.class" afterPath="$PROJECT_DIR$/target/classes/Utils/FaceRequestUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FaceIN.iml" afterPath="$PROJECT_DIR$/FaceIN.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/WEB-INF/classes/dbpool.properties" afterPath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/WEB-INF/classes/dbpool.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/FaceIN_war_exploded/WEB-INF/classes/struts.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Dao/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/Dao/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" afterPath="$PROJECT_DIR$/src/main/java/Utils/Constant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Utils/FaceRequestUtil.java" afterPath="$PROJECT_DIR$/src/main/java/Utils/FaceRequestUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,22 +26,16 @@
       <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dao/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="588">
+              <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
               <folding>
                 <element signature="method#checkUser#0;class#UserDaoImpl#0" expanded="false" />
+                <element signature="e#1724#1725#0" expanded="false" />
+                <element signature="e#1751#1752#0" expanded="false" />
+                <element signature="e#1822#1823#0" expanded="false" />
+                <element signature="e#1846#1847#0" expanded="false" />
                 <marker date="1499324496887" expanded="true" signature="1008:1072" ph="select uname... user" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -56,8 +43,8 @@
       <file leaf-file-name="DBUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Utils/DBUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315">
-              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="21">
+              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -66,8 +53,8 @@
       <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Action/LoginAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="72" column="35" lean-forward="false" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="41" />
+            <state relative-caret-position="1386">
+              <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="false" />
                 <element signature="e#683#684#0" expanded="false" />
@@ -81,24 +68,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FaceRequestUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FaceRequestUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Utils/FaceRequestUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
-              <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            <state relative-caret-position="168">
+              <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#faceDetect#0;class#FaceRequestUtil#0" expanded="false" />
-                <element signature="e#1753#1769#0" expanded="true" />
                 <element signature="method#faceSetAddFace#0;class#FaceRequestUtil#0" expanded="false" />
-                <element signature="e#2864#2880#0" expanded="true" />
                 <element signature="method#faceSetRemoveFace#0;class#FaceRequestUtil#0" expanded="false" />
-                <element signature="e#4301#4317#0" expanded="true" />
                 <element signature="method#faceSetCreate#0;class#FaceRequestUtil#0" expanded="false" />
-                <element signature="e#5349#5365#0" expanded="true" />
                 <element signature="method#faceSearch#0;class#FaceRequestUtil#0" expanded="false" />
                 <element signature="method#faceCompare#0;class#FaceRequestUtil#0" expanded="false" />
-                <element signature="e#7221#7237#0" expanded="true" />
                 <element signature="method#post#0;class#FaceRequestUtil#0" expanded="false" />
                 <element signature="method#getBoundary#0;class#FaceRequestUtil#0" expanded="false" />
                 <element signature="method#encode#0;class#FaceRequestUtil#0" expanded="false" />
@@ -108,33 +90,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AESUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Utils/AESUtils.java">
+      <file leaf-file-name="ResultUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Utils/ResultUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state relative-caret-position="210">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
-                <element signature="docComment;method#encrypt#0;class#AESUtils#0" expanded="false" />
-                <element signature="method#encrypt#0;class#AESUtils#0" expanded="false" />
-                <element signature="method#decryptHex#0;class#AESUtils#0" expanded="false" />
-                <element signature="method#decrypt#0;class#AESUtils#0" expanded="false" />
+                <element signature="e#133#134#0" expanded="true" />
+                <element signature="e#158#159#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Action/RegistAction.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#599#600#0" expanded="false" />
-                <element signature="e#626#627#0" expanded="false" />
-                <element signature="e#663#664#0" expanded="false" />
-                <element signature="e#695#696#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="819">
+              <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,8 +116,8 @@
       <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="252">
+              <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -152,8 +126,8 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Bean/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
                 <element signature="e#452#453#0" expanded="false" />
                 <element signature="e#484#485#0" expanded="false" />
@@ -193,6 +167,14 @@
         <option value="$PROJECT_DIR$/src/main/java/Dao/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/Constant.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/FaceRequestUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/ResponseBean/SearchBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/ResponseBean/Search/SearchBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/ResponseBean/Search/ResultBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/ResponseBean/Search/Result.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bean/ResponseBean/Results.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Utils/ResultUtil.java" />
       </list>
     </option>
   </component>
@@ -208,6 +190,13 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -233,8 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -372,6 +359,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -900,11 +889,13 @@
       <workItem from="1499304806206" duration="17026000" />
       <workItem from="1499401986264" duration="5451000" />
       <workItem from="1499677899700" duration="20103000" />
+      <workItem from="1500809417582" duration="3075000" />
+      <workItem from="1500992495673" duration="1683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42580000" />
+    <option name="totallyTimeSpent" value="47338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -925,7 +916,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18155198" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -936,6 +926,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -955,12 +946,144 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#484#485#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/ResponseBean/Search/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1113">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#checkUser#0;class#UserDaoImpl#0" expanded="false" />
+            <element signature="e#1724#1725#0" expanded="false" />
+            <element signature="e#1751#1752#0" expanded="false" />
+            <element signature="e#1822#1823#0" expanded="false" />
+            <element signature="e#1846#1847#0" expanded="false" />
+            <marker date="1499324496887" expanded="true" signature="1008:1072" ph="select uname... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/DBUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="72" column="35" lean-forward="false" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#683#684#0" expanded="false" />
+            <element signature="e#710#711#0" expanded="false" />
+            <element signature="e#747#748#0" expanded="false" />
+            <element signature="e#779#780#0" expanded="false" />
+            <element signature="e#2380#2381#0" expanded="false" />
+            <element signature="e#2440#2441#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/FaceRequestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#faceDetect#0;class#FaceRequestUtil#0" expanded="false" />
+            <element signature="method#faceSetAddFace#0;class#FaceRequestUtil#0" expanded="false" />
+            <element signature="method#faceSetRemoveFace#0;class#FaceRequestUtil#0" expanded="false" />
+            <element signature="method#faceSetCreate#0;class#FaceRequestUtil#0" expanded="false" />
+            <element signature="method#faceSearch#0;class#FaceRequestUtil#0" expanded="false" />
+            <element signature="method#faceCompare#0;class#FaceRequestUtil#0" expanded="false" />
+            <element signature="method#post#0;class#FaceRequestUtil#0" expanded="false" />
+            <element signature="method#getBoundary#0;class#FaceRequestUtil#0" expanded="false" />
+            <element signature="method#encode#0;class#FaceRequestUtil#0" expanded="false" />
+            <element signature="method#getBytesFromFile#0;class#FaceRequestUtil#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/AESUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
+            <element signature="e#670#671#0" expanded="false" />
+            <element signature="docComment;method#encrypt#0;class#AESUtils#0" expanded="false" />
+            <element signature="method#encrypt#0;class#AESUtils#0" expanded="false" />
+            <element signature="method#decryptHex#0;class#AESUtils#0" expanded="false" />
+            <element signature="method#decrypt#0;class#AESUtils#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Action/RegistAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#484#485#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/UserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="method#checkUser#0;class#UserDaoImpl#0" expanded="false" />
+            <element signature="e#1724#1725#0" expanded="false" />
+            <element signature="e#1751#1752#0" expanded="false" />
+            <element signature="e#1822#1823#0" expanded="false" />
+            <element signature="e#1846#1847#0" expanded="false" />
             <marker date="1499324496887" expanded="true" signature="1008:1072" ph="select uname... user" />
           </folding>
         </state>
@@ -995,6 +1118,9 @@
         <state relative-caret-position="777">
           <caret line="100" column="46" lean-forward="false" selection-start-line="100" selection-start-column="46" selection-end-line="100" selection-end-column="46" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
+            <element signature="e#670#671#0" expanded="false" />
             <element signature="docComment;method#encrypt#0;class#AESUtils#0" expanded="false" />
             <element signature="method#encrypt#0;class#AESUtils#0" expanded="false" />
             <element signature="method#decryptHex#0;class#AESUtils#0" expanded="false" />
@@ -1007,13 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#599#600#0" expanded="false" />
-            <element signature="e#626#627#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="false" />
-            <element signature="e#695#696#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,16 +1162,11 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#faceDetect#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#1753#1769#0" expanded="true" />
             <element signature="method#faceSetAddFace#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#2864#2880#0" expanded="true" />
             <element signature="method#faceSetRemoveFace#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#4301#4317#0" expanded="true" />
             <element signature="method#faceSetCreate#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#5349#5365#0" expanded="true" />
             <element signature="method#faceSearch#0;class#FaceRequestUtil#0" expanded="false" />
             <element signature="method#faceCompare#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#7221#7237#0" expanded="true" />
             <element signature="method#post#0;class#FaceRequestUtil#0" expanded="false" />
             <element signature="method#getBoundary#0;class#FaceRequestUtil#0" expanded="false" />
             <element signature="method#encode#0;class#FaceRequestUtil#0" expanded="false" />
@@ -1067,6 +1181,10 @@
           <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding>
             <element signature="method#checkUser#0;class#UserDaoImpl#0" expanded="false" />
+            <element signature="e#1724#1725#0" expanded="false" />
+            <element signature="e#1751#1752#0" expanded="false" />
+            <element signature="e#1822#1823#0" expanded="false" />
+            <element signature="e#1846#1847#0" expanded="false" />
             <marker date="1499324496887" expanded="true" signature="1008:1072" ph="select uname... user" />
           </folding>
         </state>
@@ -1110,6 +1228,9 @@
         <state relative-caret-position="294">
           <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
+            <element signature="e#670#671#0" expanded="false" />
             <element signature="docComment;method#encrypt#0;class#AESUtils#0" expanded="false" />
             <element signature="method#encrypt#0;class#AESUtils#0" expanded="false" />
             <element signature="method#decryptHex#0;class#AESUtils#0" expanded="false" />
@@ -1122,13 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#599#600#0" expanded="false" />
-            <element signature="e#626#627#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="false" />
-            <element signature="e#695#696#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,16 +1277,11 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#faceDetect#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#1753#1769#0" expanded="true" />
             <element signature="method#faceSetAddFace#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#2864#2880#0" expanded="true" />
             <element signature="method#faceSetRemoveFace#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#4301#4317#0" expanded="true" />
             <element signature="method#faceSetCreate#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#5349#5365#0" expanded="true" />
             <element signature="method#faceSearch#0;class#FaceRequestUtil#0" expanded="false" />
             <element signature="method#faceCompare#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#7221#7237#0" expanded="true" />
             <element signature="method#post#0;class#FaceRequestUtil#0" expanded="false" />
             <element signature="method#getBoundary#0;class#FaceRequestUtil#0" expanded="false" />
             <element signature="method#encode#0;class#FaceRequestUtil#0" expanded="false" />
@@ -1206,36 +1315,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/ParseSystemUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Photo2Base64.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="33" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#484#485#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1280,43 +1363,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Action/RegistAction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#599#600#0" expanded="false" />
-            <element signature="e#626#627#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="false" />
-            <element signature="e#695#696#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="357">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/UserDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/AESUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="252">
+          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
-            <element signature="method#checkUser#0;class#UserDaoImpl#0" expanded="false" />
-            <marker date="1499324496887" expanded="true" signature="1008:1072" ph="select uname... user" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#597#598#0" expanded="false" />
+            <element signature="e#670#671#0" expanded="false" />
+            <element signature="docComment;method#encrypt#0;class#AESUtils#0" expanded="false" />
+            <element signature="method#encrypt#0;class#AESUtils#0" expanded="false" />
+            <element signature="method#decryptHex#0;class#AESUtils#0" expanded="false" />
+            <element signature="method#decrypt#0;class#AESUtils#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/ParseSystemUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Action/RegistAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Action/LoginAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="72" column="35" lean-forward="false" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="41" />
+        <state relative-caret-position="1386">
+          <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="false" />
             <element signature="e#683#684#0" expanded="false" />
@@ -1329,56 +1418,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/Constant.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="210">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#484#485#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="method#checkUser#0;class#UserDaoImpl#0" expanded="false" />
+            <element signature="e#1724#1725#0" expanded="false" />
+            <element signature="e#1751#1752#0" expanded="false" />
+            <element signature="e#1822#1823#0" expanded="false" />
+            <element signature="e#1846#1847#0" expanded="false" />
+            <marker date="1499324496887" expanded="true" signature="1008:1072" ph="select uname... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/ResponseBean/Search/SearchBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/ResponseBean/Search/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils/DBUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="21">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/AESUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bean/ResponseBean/Results.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="1449">
+          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
           <folding>
-            <element signature="docComment;method#encrypt#0;class#AESUtils#0" expanded="false" />
-            <element signature="method#encrypt#0;class#AESUtils#0" expanded="false" />
-            <element signature="method#decryptHex#0;class#AESUtils#0" expanded="false" />
-            <element signature="method#decrypt#0;class#AESUtils#0" expanded="false" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Utils/FaceRequestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state relative-caret-position="168">
+          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#faceDetect#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#1753#1769#0" expanded="true" />
             <element signature="method#faceSetAddFace#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#2864#2880#0" expanded="true" />
             <element signature="method#faceSetRemoveFace#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#4301#4317#0" expanded="true" />
             <element signature="method#faceSetCreate#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#5349#5365#0" expanded="true" />
             <element signature="method#faceSearch#0;class#FaceRequestUtil#0" expanded="false" />
             <element signature="method#faceCompare#0;class#FaceRequestUtil#0" expanded="false" />
-            <element signature="e#7221#7237#0" expanded="true" />
             <element signature="method#post#0;class#FaceRequestUtil#0" expanded="false" />
             <element signature="method#getBoundary#0;class#FaceRequestUtil#0" expanded="false" />
             <element signature="method#encode#0;class#FaceRequestUtil#0" expanded="false" />
             <element signature="method#getBytesFromFile#0;class#FaceRequestUtil#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/ResultUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
           </folding>
         </state>
       </provider>

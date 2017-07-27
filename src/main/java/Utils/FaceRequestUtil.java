@@ -42,7 +42,7 @@ public class FaceRequestUtil {
         //faceAddFace("deb43041cbe020e66f04011facf86abd");//1
         //faceAddFace("49b44174619f7b5b20c701f3a4a66904");//2
         //faceAddFace("d1a85097375bf543d0d383a31dc993b6");//2
-        //faceSearch("D:\\Shared\\Tmp\\2.jpg");
+        faceSearch("D:\\Shared\\Tmp\\2.jpg");
     }
     /*
     * 分析人脸
